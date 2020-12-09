@@ -1,3 +1,3 @@
-# magpie-h5
+# vue3-mobile-template
 
-magpie 前台 h5
+mobile template by vue3 and vant
