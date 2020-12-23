@@ -1111,6 +1111,11 @@
   dependencies:
     "@popperjs/core" "^2.5.4"
 
+"@vant/touch-emulator@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/@vant/touch-emulator/download/@vant/touch-emulator-1.2.0.tgz#486300b23e57db9ce9231a04e0a0c621c68692d8"
+  integrity sha1-SGMAsj5X25zpIxoE4KDGIcaGktg=
+
 "@vant/use@^0.1.0":
   version "0.1.0"
   resolved "https://registry.npm.taobao.org/@vant/use/download/@vant/use-0.1.0.tgz#7d2020aa7e5ab92d57dea46cb24dd9013c7eacee"
@@ -1684,11 +1689,6 @@ alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/alphanum-sort/download/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
-
-amfe-flexible@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.npm.taobao.org/amfe-flexible/download/amfe-flexible-2.2.1.tgz#353f00289e4d38ca88a21eb3854420308af0b559"
-  integrity sha1-NT8AKJ5NOMqIoh6zhUQgMIrwtVk=
 
 ansi-colors@^3.0.0:
   version "3.2.4"
@@ -8405,10 +8405,10 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-router@4.0.0-beta.13:
-  version "4.0.0-beta.13"
-  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-4.0.0-beta.13.tgz?cache=0&sync_timestamp=1606723649928&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-4.0.0-beta.13.tgz#4611d09a9e44f231cc401ecc294a7f2dcb30e6a6"
-  integrity sha1-RhHQmp5E8jHMQB7MKUp/Lcsw5qY=
+vue-router@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-4.0.1.tgz?cache=0&sync_timestamp=1607349532945&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-4.0.1.tgz#309240e50524b1e7d4e82e27f0a0fa25fe3d1d71"
+  integrity sha1-MJJA5QUksefU6C4n8KD6Jf49HXE=
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"

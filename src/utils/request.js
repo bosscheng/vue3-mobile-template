@@ -3,6 +3,7 @@
  */
 
 import axios from 'axios';
+import {Toast} from 'vant';
 
 const baseUrl = process.env.VUE_APP_BASE_URL || '';
 const apiPath = process.env.VUE_APP_BASE_API || ''; // 本地代理才能使用到的
@@ -30,6 +31,15 @@ service.interceptors.response.use(response => {
         return Promise.reject(res.message || 'error');
     }
 }, error => {
+    let response = error.response || {};
+    let message = '网络异常';
+    // 断网情况，会没有statusText
+    if (response.statusText) {
+        message = response.statusText + ':' + response.status
+    }
+    Toast.fail({
+        message: message
+    });
     return Promise.reject(error);
 });
 

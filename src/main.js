@@ -7,9 +7,14 @@ import App from "./App";
 import router from "./router";
 import store from "./store";
 import { NavBar } from 'vant';
-import 'amfe-flexible';
+import './utils/flexible';
 const app = createApp(App);
 import "./styles/index.less"
+
+import "./utils/permission";
+
+// support 桌面端
+import '@vant/touch-emulator';
 
 app.use(store);
 app.use(router);
