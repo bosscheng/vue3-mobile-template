@@ -8,20 +8,20 @@
 </template>
 
 <script>
-    import {ref, watch, getCurrentInstance} from "vue";
-    import {useRoute} from "vue-router"
+    import {ref, watch} from "vue";
+    import {useRoute,useRouter} from "vue-router"
     import {isIndexView} from "../utils";
 
     export default {
         name: "NavBar",
         setup() {
-            const {ctx} = getCurrentInstance();
             const isIndex = ref(false);
             const title = ref('');
             const route = useRoute();
+            const router = useRouter();
             //
             const onBack = () => {
-                ctx.$router.back();
+                router.back();
             };
 
             watch([() => route.path, () => route.meta], ([to, newMeta]) => {

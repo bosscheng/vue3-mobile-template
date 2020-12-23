@@ -10,6 +10,7 @@ router.beforeEach((to, from, next) => {
 
 
 // update title
-router.afterEach((to, from, failure) => {
+router.afterEach((to) => {
+
     document.title = (to.meta && to.meta.title) || '';
 });
